@@ -1,0 +1,4 @@
+name: Automated thank you letters for Ensayos
+description: >
+   Automatic rendering and sending by email thankyou letters for Ensayos
+create_dir: TRUE

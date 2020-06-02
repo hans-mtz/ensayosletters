@@ -1,0 +1,64 @@
+\documentclass{letter}
+\usepackage{fancyhdr}
+\usepackage{lipsum}
+\usepackage{marvosym}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{etoolbox}
+$if(lang)$
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+$endif$
+
+
+\fancypagestyle{plain}{
+\fancyhf[]{}
+\fancyhf[HR]{\hfill \includegraphics[height=2.2cm]{ensayos.png}}
+\fancyhf[HL]{\includegraphics[height=2.5cm]{uanl} \hfill}
+\fancyhf[FR]{\hfill \begin{minipage}[b]{6.5cm}
+  \footnotesize
+  Av. Lázaro Cárdenas 4600 Ote., Unidad Mederos \\ 
+  C.P. 64930, Monterrey, Nuevo León, México \\
+  Tel: +52 (81) 8329  4150, Ext. 2463 \\
+  Fax: +52 (81) 8342 – 2897   \\
+  {\normalfont\ttfamily ensayos@uanl.mx} \\
+  {\normalfont\ttfamily ensayos.uanl.mx} \\
+  \end{minipage}}
+\fancyhf[FL]{\includegraphics[height=3cm]{visioin} \hfill}
+  }
+\pagestyle{plain}
+
+\makeatletter
+\patchcmd\opening{{\raggedleft\@date\par}}{}{}{}
+\patchcmd\opening{\@date \end{tabular}\par}{\end{tabular}\par}{}{}
+\let\ps@empty\ps@plain
+\let\ps@firstpage\ps@plain
+\makeatother
+
+% \address{Joe Smith \\ 100 Main Street. \\ Chicago, IL 60610}
+
+
+\begin{document}%
+
+\begin{letter}{\vfill {\bfseries $params.salutation$ $params.first$ $params.second$ $params.last$\\ $params.affiliation$}}%
+
+\opening{Apreciable $params.salutation$ $params.first$ $params.second$ $params.last$,}
+
+$body$
+
+
+\vfill
+\begin{center}
+Atentamente,\vspace{-1cm}\\
+\includegraphics[height=5cm]{edgar} \vspace{-1cm}\\
+Dr. Edgar Luna \\
+Editor \\
+``Alere Flammam Veritatis" \\
+Monterrey, N.L., \today
+\end{center}
+\vfill
+
+\end{letter}
+
+\end{document}

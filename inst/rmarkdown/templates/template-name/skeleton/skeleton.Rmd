@@ -1,0 +1,21 @@
+---
+title: "yes"
+output:
+  pdf_document:
+    template: ensayosletter.tex
+latex_macros: TRUE
+lang: spa
+params:
+  salutation: Dra.
+  first: Cinthya
+  second: 
+  last: Caamal Olvera
+  affiliation: Universidad Autónoma de Nuevo León
+---
+
+Por este medio le agradezco el dictamen realizado durante el presente año, a uno de los artículos sometidos a Ensayos Revista de Economía para su posible publicación. 
+
+Así mismo, reciba mi más amplio reconocimiento por su dedicación en la elaboración de su dictamen. Estoy seguro que sus comentarios y sugerencias serán de gran valía para los autores correspondientes, y que además contribuyen a la investigación en el área de la economía.
+
+Me despido de usted enviándole un cordial saludo.
+
