@@ -1,2 +1,2 @@
 # ensayosletters
-Cartas de agradecimiento
+Cartas de agradecimiento automatizadas
